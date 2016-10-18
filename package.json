@@ -1,8 +1,8 @@
 {
-  "name": "babel-plugin-transform-helper-modules",
+  "name": "babel-plugin-transform-es3-helper-modules",
   "version": "6.1.0",
-  "description": "Externalize helper functions to babel-helper-modules",
-  "repository": "https://github.com/mntnoe/babel-plugin-transform-helper-modules",
+  "description": "Externalize helper functions to babel-helper-modules-es3",
+  "repository": "https://github.com/inferpse/babel-plugin-transform-es3-helper-modules",
   "license": "MIT",
   "main": "lib/index.js",
   "keywords": [
@@ -12,7 +12,7 @@
     "build": "mkdir -p lib; babel --presets es2015 -o lib/index.js src/index.js"
   },
   "peerDependencies": {
-    "babel-helper-modules": "^6.0.0",
+    "babel-helper-modules-es3": "^6.0.0",
     "regenerator-runtime": "^0.9.5"
   },
   "devDependencies": {

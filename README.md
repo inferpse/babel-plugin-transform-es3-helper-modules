@@ -1,21 +1,19 @@
-[![Build Status](https://travis-ci.org/mntnoe/babel-plugin-transform-helper-modules.svg?branch=master)](https://travis-ci.org/mntnoe/babel-plugin-transform-helper-modules)
-
-babel-plugin-transform-helper-modules
+babel-plugin-transform-es3-helper-modules
 =====================================
 
-Externalize references to helpers using [babel-helper-modules](https://www.npmjs.com/package/babel-helper-modules).
+Externalize references to helpers using [babel-helper-modules-es3](https://www.npmjs.com/package/babel-helper-modules-es3).
 
 If you want to externalize builtins too via [core-js](https://www.npmjs.com/package/core-js)'s library, see the official plugin [babel-plugin-transform-runtime](https://www.npmjs.com/package/babel-plugin-transform-runtime).
 
 ## Installation
 
 ```sh
-$ npm install babel-plugin-transform-helper-modules babel-helper-modules
+$ npm install babel-plugin-transform-es3-helper-modules babel-helper-modules-es3
 ```
 
 ## Usage
 
-Remember to also install [babel-helper-modules](https://www.npmjs.com/package/babel-helper-modules). when using the transpiled code.
+Remember to also install [babel-helper-modules-es3](https://www.npmjs.com/package/babel-helper-modules-es3). when using the transpiled code.
 
 ### Via `.babelrc` (Recommended)
 
@@ -23,20 +21,20 @@ Remember to also install [babel-helper-modules](https://www.npmjs.com/package/ba
 
 ```json
 {
-  "plugins": ["transform-helper-modules"]
+  "plugins": ["transform-es3-helper-modules"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-$ babel --plugins transform-helper-modules script.js
+$ babel --plugins transform-es3-helper-modules script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["transform-helper-modules"]
+  plugins: ["transform-es3-helper-modules"]
 });
 ```
